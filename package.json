@@ -2,6 +2,9 @@
   "name": "avalonia-shortcuts",
   "displayName": "Avalonia Shortcuts",
   "publisher": "ejinsw",
+  "repository": {
+    "url": "https://github.com/ejinsw/avalonia-shortcuts.git"
+  },
   "description": "Useful commands for avalonia",
   "version": "0.0.1",
   "engines": {
@@ -17,6 +20,10 @@
       {
         "command": "avalonia-shortcuts.makeNewView",
         "title": "Avalonia Shortcuts: Create a new View File"
+      },
+      {
+        "command": "avalonia-shortcuts.createStyle",
+        "title": "Avalonia Shortcuts: Create a new Styles File"
       }
     ]
   },
