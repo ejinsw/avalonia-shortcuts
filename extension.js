@@ -16,7 +16,7 @@ function activate(context) {
 	let dotnetRun = vscode.commands.registerCommand('avalonia-shortcuts.dotnetRun', async function () {
 
 		// Create a new terminal
-		const terminal = vscode.window.createTerminal(`Terminal: ${input}`);
+		const terminal = vscode.window.createTerminal();
 
 		// Send the command to the terminal
 		terminal.sendText(`dotnet run`);
