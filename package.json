@@ -18,6 +18,10 @@
   "contributes": {
     "commands": [
       {
+        "command": "avalonia-shortcuts.dotnetRun",
+        "title": "Avalonia Shortcuts: Run"
+      },
+      {
         "command": "avalonia-shortcuts.makeNewView",
         "title": "Avalonia Shortcuts: Create a new View File"
       },

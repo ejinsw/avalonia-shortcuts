@@ -12,6 +12,24 @@ const fs = require('fs');
  */
 function activate(context) {
 
+	/* Build and run app */
+	let dotnetRun = vscode.commands.registerCommand('avalonia-shortcuts.dotnetRun', async function () {
+
+		// Create a new terminal
+		const terminal = vscode.window.createTerminal(`Terminal: ${input}`);
+
+		// Send the command to the terminal
+		terminal.sendText(`dotnet run`);
+
+		// Show the terminal
+		terminal.show();
+
+
+		// Display a message box to the user
+		vscode.window.showInformationMessage('Building app...');
+	});
+
+	context.subscriptions.push(dotnetRun);
 
 	/* View file creator */
 	let makeNewView = vscode.commands.registerCommand('avalonia-shortcuts.makeNewView', async function () {
